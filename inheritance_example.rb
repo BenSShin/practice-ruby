@@ -1,4 +1,4 @@
-class Car
+class Vehicle
   def initialize
     @speed = 0
     @direction = "north"
@@ -15,13 +15,15 @@ class Car
   def turn(new_direction)
     @direction = new_direction
   end
+end
 
+class Car < Vehicle
   def honk_horn
     puts "Beeeeeeep!"
   end
 end
 
-class Bike < Car
+class Bike < Vehicle
   def ring_bell
     puts "Ring ring!"
   end
@@ -33,5 +35,5 @@ bike = Bike.new
 pp car.accelerate
 car.honk_horn
 
-bike.accelerate
+pp bike.accelerate
 bike.ring_bell
