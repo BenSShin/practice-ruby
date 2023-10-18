@@ -27,6 +27,17 @@ chair1 = Chairs.new(brand: "Herman Miller", color: "gray", price: 300, in_stock:
 chair2 = Chairs.new(brand: "Svelti", color: "black", price: 250, in_stock: true)
 chair3 = Chairs.new(brand: "Steelcase", color: "silver", price: 200, in_stock: true)
 
-pp chair1
-pp chair2
-pp chair3
+class Food < Chairs
+  attr_reader :food_name, :shelf_life, :in_stock, :price
+  attr_writer :in_stock, :price
+
+  def initialize(input_options)
+    super
+    @food_name = input_options[:food_name]
+    @shelf_life = input_options[:shelf_life]
+  end
+end
+
+food1 = Food.new(food_name: "bread", shelf_life: 2, price: 4, in_stock: true)
+
+pp food1
