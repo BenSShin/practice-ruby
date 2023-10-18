@@ -15,17 +15,18 @@ class Chairs
   attr_reader :brand, :color, :price, :in_stock
   attr_writer :color, :price, :in_stock
 
-  def initialize(input_brand, input_color, input_price, input_in_stock)
-    @brand = input_brand
-    @color = input_color
-    @price = input_price
-    @in_stock = input_in_stock
+  def initialize(input_options)
+    @brand = input_options[:brand]
+    @color = input_options[:color]
+    @price = input_options[:price]
+    @in_stock = input_options[:in_stock]
   end
 end
 
-chair1 = Chairs.new("Herman Miller", "gray", 300, false)
-chair2 = Chairs.new("Svelti", "black", 250, true)
-chair3 = Chairs.new("Steelcase", "silver", 200, true)
+chair1 = Chairs.new(brand: "Herman Miller", color: "gray", price: 300, in_stock: false)
+chair2 = Chairs.new(brand: "Svelti", color: "black", price: 250, in_stock: true)
+chair3 = Chairs.new(brand: "Steelcase", color: "silver", price: 200, in_stock: true)
 
-class Tables < Chairs # pastes what was in the Chairs class into new class called Tables
-end
+pp chair1
+pp chair2
+pp chair3
