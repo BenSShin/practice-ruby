@@ -27,11 +27,5 @@ chair1 = Chairs.new("Herman Miller", "gray", 300, false)
 chair2 = Chairs.new("Svelti", "black", 250, true)
 chair3 = Chairs.new("Steelcase", "silver", 200, true)
 
-pp chair1
-pp chair2
-pp chair3
-pp chair1.brand
-pp chair2.color
-pp chair3.price
-chair1.in_stock = true
-pp chair1.in_stock
+class Tables < Chairs # pastes what was in the Chairs class into new class called Tables
+end
