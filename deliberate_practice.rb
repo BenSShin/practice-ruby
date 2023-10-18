@@ -5,6 +5,6 @@
 numbers = [1, 2, 3]
 sum = 0
 numbers.each do |number|
-  sum = (number * number)
+  sum = sum + (number * number)
 end
 pp sum
