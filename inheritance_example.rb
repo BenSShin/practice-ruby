@@ -4,10 +4,6 @@ class Car
     @direction = "north"
   end
 
-  def speed
-    pp @speed
-  end
-
   def brake
     @speed = 0
   end
@@ -34,12 +30,8 @@ end
 car = Car.new
 bike = Bike.new
 
-car.speed
-car.accelerate
-car.speed
+pp car.accelerate
 car.honk_horn
 
-bike.speed
 bike.accelerate
-bike.speed
 bike.ring_bell
