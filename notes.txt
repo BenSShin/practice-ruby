@@ -1,0 +1,5 @@
+- Accessing data through terminal
+  -irb
+  -require "http"
+  -data = HTTP.get("website url")       sets data from the website as variable data
+  -can navigate through data like you would an array or hash
