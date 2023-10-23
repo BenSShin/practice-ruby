@@ -9,4 +9,26 @@ numbers.each do |number|
 end
 pp sum
 
-# Let's play! You have to return which player won! In case of a draw return Draw!.
+# Create a function with two arguments that will return an array of the first n multiples of x.
+# Assume both the given number and the number of times to count will be positive numbers greater than 0.
+# Return the results as an array or list ( depending on language ).
+
+n = 5
+x = 8
+index = 1
+multiples = []
+
+while index < n + 1
+  multiples << index
+  index += 1
+end
+
+pp multiples.map { |number| number * x }
+
+#OR
+
+def multiples(x, n)
+  (1..n).map { |i| i * x }
+end
+
+pp multiples(x, n)
