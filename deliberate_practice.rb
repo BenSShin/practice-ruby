@@ -32,3 +32,9 @@ def multiples(x, n)
 end
 
 pp multiples(x, n)
+
+# Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+numbers = [1, -3, 2, -5, 3]
+
+pp numbers.map { |number| number * -1 }
