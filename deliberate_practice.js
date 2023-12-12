@@ -3,8 +3,8 @@ var word = "hello";
 console.log(word.length);
 
 // Write a program that uses a variable to store a word, then prints the word with all lowercase letters.
-var word = "SCREAMING";
-console.log(word.toLowerCase());
+var words = "SCREAMING";
+console.log(words.toLowerCase());
 
 // Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
 
@@ -34,3 +34,16 @@ if (age <= 10) {
   ticketPrice = 7;
 }
 console.log(ticketPrice);
+
+// Creating array
+let arr = [4, 8, 7, 13, 12];
+
+function simpleArraySum(ar) {
+  let sum = 0;
+  for (let i = 0; i < ar.length; i++) {
+    sum += ar[i];
+  }
+  console.log(sum);
+}
+
+console.log(simpleArraySum(arr)); // Prints: 44
